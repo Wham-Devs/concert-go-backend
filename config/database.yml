@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: concert_go_backend_production
-  username: concert_go_backend
-  password: <%= ENV["CONCERT_GO_BACKEND_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
