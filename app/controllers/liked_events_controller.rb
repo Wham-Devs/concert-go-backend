@@ -5,7 +5,7 @@ class LikedEventsController < ApplicationController
       end
     
       def create
-        eventx = LikedEvent.create(params[:liked])
+        eventx = LikedEvent.create(liked: params[:liked])
         if eventx.valid?
           render json: eventx
         else
