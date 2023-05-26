@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :liked_events
   get 'private/test'
   resources :events
   devise_for :users,
